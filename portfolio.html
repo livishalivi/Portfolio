@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Livisha | Portfolio</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+}
+
+/* Navbar */
+nav{
+    background:#222;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:orange;
+}
+
+/* Hero */
+.hero{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    min-height:90vh;
+    background:#ffe4cc;
+    padding:50px;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:55px;
+}
+
+.hero-text h3{
+    color:#ff6600;
+    margin:20px 0;
+}
+
+.hero-text p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.hero img{
+    width:350px;
+}
+
+.btn{
+    padding:15px 25px;
+    border:none;
+    background:#ff6600;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+.btn:hover{
+    background:#ff4500;
+}
+
+/* Sections */
+section{
+    padding:80px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:45px;
+}
+
+/* Skills */
+.skills-container{
+    display:flex;
+    justify-content:space-around;
+}
+
+.skills-container ul{
+    line-height:2;
+}
+
+/* Cards */
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.card,.project{
+    width:280px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+    transition:.4s;
+}
+
+.card:hover,
+.project:hover{
+    transform:translateY(-10px);
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+/* Contact Form */
+.contact-box{
+    width:500px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.contact-box label{
+    display:block;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+.contact-box input,
+.contact-box textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border-radius:10px;
+    border:1px solid gray;
+}
+
+#message{
+    margin-top:20px;
+    font-weight:bold;
+}
+
+/* Social */
+.social-links{
+    text-align:center;
+    margin-top:50px;
+}
+
+.social-links a{
+    font-size:22px;
+    text-decoration:none;
+}
+
+/* Footer */
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav>
+<h2>Livisha</h2>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+<div class="hero-text">
+<h1>Hello, I'm Livisha 👋</h1>
+<h3>Aspiring Web Developer</h3>
+<p>
+I am passionate about creating responsive and visually appealing websites.
+I enjoy learning new technologies and building projects that provide
+meaningful user experiences.
+</p>
+<button class="btn">
+View Projects
+</button>
+</div>
+<div>
+</div>
+</section>
+
+<!-- About -->
+
+<section id="about">
+<h1>About Me</h1>
+<p style="font-size:20px;line-height:2;">
+Hello! I'm Livisha, an enthusiastic web developer with a strong interest
+in front-end development and responsive web design.
+
+I enjoy transforming ideas into interactive websites using HTML, CSS,
+Bootstrap, and JavaScript. I am continuously learning and improving my
+technical skills while creating user-friendly digital experiences.
+</p>
+</section>
+
+<!-- Skills -->
+
+<section id="skills">
+<h1>Skills</h1>
+<div class="skills-container">
+<div>
+<h2>Technical Skills</h2>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript</li>
+<li>SQL</li>
+<li>Responsive Design</li>
+</ul>
+</div>
+
+<div>
+<h2>Soft Skills</h2>
+<ul>
+
+<li>Communication</li>
+<li>Problem Solving</li>
+<li>Teamwork</li>
+<li>Adaptability</li>
+<li>Time Management</li>
+
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Services -->
+
+<section id="services">
+<h1>Services</h1>
+<div class="cards">
+<div class="card">
+<h2>💻 Web Development</h2>
+<p>
+Creating responsive and interactive websites using modern technologies.
+</p>
+</div>
+<div class="card">
+<h2>🎨 Website Design</h2>
+<p>
+Designing clean and user-friendly web pages.
+</p>
+</div>
+<div class="card">
+<h2>🔍 Testing & Debugging</h2>
+<p>
+Identifying and fixing errors to ensure reliable performance.
+</p>
+</div>
+</div>
+</section>
+
+<!-- Projects -->
+
+<section id="projects">
+<h1>Projects</h1>
+<div class="cards">
+<div class="project">
+<h2>Portfolio Website</h2>
+<p>
+Designed and developed a responsive portfolio website using HTML and CSS.
+</p>
+
+</div>
+<div class="project">
+<h2>Calculator App</h2>
+<p>
+Built a simple calculator using HTML, CSS and JavaScript.
+</p>
+</div>
+<div class="project">
+<h2>To-Do List</h2>
+<p>
+Created a task management application with add and delete functionality.
+</p>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<h1>Contact Me</h1>
+<div class="contact-box">
+<form id="contactForm">
+<label>Email ID</label>
+<input type="email" id="email">
+<label>Description</label>
+<textarea rows="6" id="desc"></textarea>
+<button class="btn" type="submit">
+Submit
+</button>
+<p id="message"></p>
+</form>
+</div>
+
+<div class="social-links">
+<h2>Connect With Me</h2>
+<br>
+<a href="https://github.com/livishalivi" target="_blank">
+<i class="fa-brands fa-github"></i>
+GitHub
+</a>
+<br><br>
+<a href="https://www.linkedin.com/in/livisha-l-2310233b3" target="_blank">
+<i class="fa-brands fa-linkedin"
+style="color:#0077B5"></i>
+LinkedIn
+</a>
+<br><br>
+<a href="https://instagram.com" target="_blank">
+<i class="fa-brands fa-instagram"
+style="color:#E4405F"></i>
+Instagram
+</a>
+<br><br>
+<a href="https://youtube.com" target="_blank">
+<i class="fa-brands fa-youtube"
+style="color:red"></i>
+YouTube
+</a>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>
+© 2025 Livisha | Built with HTML, CSS & JavaScript
+</p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+
+document.getElementById("contactForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+let email =
+document.getElementById("email").value.trim();
+
+let desc =
+document.getElementById("desc").value.trim();
+
+let message =
+document.getElementById("message");
+
+let pattern =
+/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(email==="" || desc==="")
+{
+message.innerHTML="Please fill all fields.";
+message.style.color="red";
+}
+
+else if(!pattern.test(email))
+{
+message.innerHTML="Please enter a valid email address.";
+message.style.color="red";
+}
+
+else
+{
+message.innerHTML=
+"Thank you! Your message has been sent successfully.";
+
+message.style.color="green";
+
+document.getElementById("contactForm").reset();
+}
+
+});
+</script>
+</body>
+</html>
